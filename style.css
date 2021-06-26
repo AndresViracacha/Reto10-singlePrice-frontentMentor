@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyanlight: #4abebd;
+  --yellow: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --grayBlue: hsl(218, 22%, 67%);
+}
+body {
+  background-color: var(--gray);
+  font-family: "Karla", sans-serif;
+}
+.container {
+  max-width: 635px;
+  margin: 0 auto;
+  margin-top: 162px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.137);
+}
+.container-main {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 40px;
+}
+.container-main h1 {
+  margin-bottom: 24px;
+  color: var(--cyan);
+}
+.container-main-accent {
+  color: var(--yellow);
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.container-main-info {
+  color: var(--grayBlue);
+  font-weight: 400;
+  line-height: 26px;
+}
+.container-price {
+  width: 50%;
+  background-color: var(--cyan);
+  padding: 40px 40px;
+  padding-bottom: 39px;
+  color: #fff;
+}
+.container-price button {
+  width: 100%;
+  background-color: var(--yellow);
+  border: none;
+  padding: 15px 0;
+  border-radius: 6px;
+  font-family: "Karla", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container-price h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+.container-price .price {
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+.container-price .price-info {
+  margin-bottom: 30px;
+}
+.container-price .price span {
+  font-weight: 700;
+  color: #fff;
+  font-size: 30px;
+  margin-right: 14px;
+}
+.container-info {
+  width: 50%;
+  background-color: var(--cyanlight);
+  padding: 40px 40px;
+  padding-bottom: 39px;
+  color: var(--gray);
+}
+.container-info h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.container-info p {
+  line-height: 20px;
+  font-size: 14px;
+}
+@media (max-width: 660px) {
+  .container {
+    flex-direction: column;
+    margin: 72px 32px;
+  }
+  .container-price {
+    width: 100%;
+  }
+  .container-info {
+    width: 100%;
+  }
+}
